@@ -1,0 +1,83 @@
+
+/* 전체적인 hidden 속성과 box-sizing:border-box 해주기 */
+.hidden{
+    position: absolute;
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* 메인 시작 */
+
+.main{
+    display: flow-root;
+}
+
+.main header{
+    display: flex;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.main header input{
+    font-size: 1.2em;
+    flex-grow: 1;
+}
+
+.main header button {
+    flex-shrink: 0;
+    font-size: 1.2em;
+    flex-basis: 100px;
+}
+
+.main .list_todo{
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    background-color: lightsteelblue;
+    border-radius: 5px;
+}
+
+.main .list_todo li{
+    padding: 5px 15px;
+    background-color: aliceblue;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: #222;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.5);
+}
+
+.main .list_todo li+li{
+    margin-top: 20px;
+}
+
+.list_todo li button {
+    float:right;
+    padding: 10px;
+    margin: 0 0 0 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    color: midnightblue;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.list_todo li button:hover{
+    background-color: rgb(180, 216, 228);
+}
+
+.list_todo .done{
+    text-decoration: line-through;
+}
+
+.txt_invalid{
+    color: tomato;
+}
