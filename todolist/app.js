@@ -58,7 +58,7 @@ function genItem(val,complete){
     }
 
     li.addEventListener('click',()=>{
-        li.classList.toggle('done')
+        li.classList.toggle('done');
         //할 일 업데이트 함수
         buildTask()
         console.log(val)

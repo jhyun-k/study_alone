@@ -28,12 +28,22 @@
 .main header input{
     font-size: 1.2em;
     flex-grow: 1;
+    border-radius: 5px;
 }
 
 .main header button {
     flex-shrink: 0;
     font-size: 1.2em;
     flex-basis: 100px;
+    border: none;
+    background-color: lightsteelblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.main header button:hover{
+    background-color: midnightblue;
 }
 
 .main .list_todo{
@@ -74,8 +84,10 @@
     background-color: rgb(180, 216, 228);
 }
 
-.list_todo .done{
+.main .list_todo .done{
     text-decoration: line-through;
+    color: grey;
+
 }
 
 .txt_invalid{
